@@ -3,5 +3,7 @@ console.log(`В списке ${document.querySelector('#categories').children.le
 
 
 
-document.querySelectorAll('.item').forEach(item => console.log(`Категория: ${item.querySelector('h2').textContent)}`
-console.log(item.querySelector('ul').children.length));
+document.querySelectorAll('.item').forEach(item => console.log
+    (`Категория: ${item.querySelector('h2').textContent}, 
+    количество элементов ${item.querySelector('ul').children.length}`));
+

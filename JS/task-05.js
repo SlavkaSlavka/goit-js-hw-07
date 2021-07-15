@@ -4,9 +4,9 @@ const spanValue = spanEl.textContent;
 
 const changeSpan = inputEl.addEventListener('input', inputChange);
 
-function inputChange(inputEl) {
-    spanEl.textContent = inputEl.currentTarget.value ? inputEl.currentTarget.value
-    : spanValue;
+function inputChange(event) {
+    spanEl.textContent = event.currentTarget.value ? event.currentTarget.value
+        : spanValue;
 }
 
 
